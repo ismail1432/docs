@@ -124,6 +124,16 @@ For the sake of consistency, we're using the annotation in the below documentati
 For MongoDB ODM, all the filters are in the namespace `ApiPlatform\Core\Bridge\Doctrine\MongoDbOdm\Filter`. The filter
 services all begin with `api_platform.doctrine_mongodb.odm`.
 
+| Filter         | Description                                                                                                                                   |
+| -------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| Search Filter  | The search allow to filter a collection by term                                                                                               |
+| Date Filter    | The date filter allows to filter a collection by date intervals.                                                                              |
+| Boolean Filter | The boolean filter allows you to search on boolean fields and values.                                                                         |
+| Numeric Filter | The numeric filter allows you to search on numeric fields and values.                                                                         |
+| Range Filter   | The range filter allows you to filter by a value lower than, greater than, lower than or equal, greater than or equal and between two values. |
+| Exists Filter  | The exists filter allows you to select items based on a nullable field value.                                                                 |
+| Order Filter   | The order filter allows to sort a collection against the given properties.                                                                    |
+
 ### Search Filter
 
 If Doctrine ORM or MongoDB ODM support is enabled, adding filters is as easy as registering a filter service in the
